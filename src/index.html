@@ -1,0 +1,308 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel finder</title>
+<!--    <link rel="stylesheet" href="reset.css">-->
+<!--    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper.min.css">-->
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.min.js" defer></script>
+
+</head>
+<body>
+<div class="burger-menu-wrap"><span class="burger-menu"></span></div>
+<aside>
+    <div class="empty"></div>
+    <ul class="nav">
+        <input class="search-input-header" type="text" placeholder="Поиск">
+        <img class="search-image-header" src="images/search_icon_green.svg" alt="search">
+        <li class="nav__item active-page"><a href="#"><img src="images/home-page.svg" alt="home" width="25px" height="25px"><span>Главная</span></a></li>
+        <li class="nav__item"><a href="#"><img src="images/about.svg" alt="about"><span>О компании</span></a></li>
+        <li class="nav__item"><a href="#"><img src="images/special.svg" alt="special"><span>Спецпредложения</span></a></li>
+        <li class="nav__item expandable"><a href="#"><img src="images/services.svg" alt="services"><span>Услуги</span></a></li>
+        <li class="nav__item"><a href="#"><img src="images/hotels.svg" alt="hotels"><span>Отели</span></a></li>
+        <li class="nav__item"><a href="#"><img src="images/transport.svg" alt="transport"><span>Траспорт</span></a></li>
+        <li class="nav__item"><a href="#"><img src="images/visa.svg" alt="visa"><span>Визы</span></a></li>
+        <li class="nav__item"><a href="#"><img src="images/baggage.svg" alt="baggage"><span>Багаж</span></a></li>
+        <li class="nav__item"><a href="#"><img src="images/vacancies.svg" alt="vacancies"><span>Вакансии</span></a></li>
+        <li class="nav__item expandable"><a href="#"><img src="images/contacts.svg" alt="contacts"><span>Контактная <br> информация</span></a></li>
+    </ul>
+</aside>
+
+<header>
+    <div class="header__language">
+        <img src="images/flag.png" alt="english">
+        <span class="header__language__item">ENG</span>
+    </div>
+    <div class="header__search">
+        <img src="images/search_icon.svg" alt="search">
+    </div>
+    <div class="header__search__expanded">
+        <input class="search-input" type="text" placeholder="Поиск">
+        <img class="search-image" src="images/search_icon.svg" alt="search">
+    </div>
+    <div class="header__contacts">
+            <h1 class="header__contacts__phone">+7 (963) 626-58-10</h1>
+            <span class="header__contacts__text">договорной отдел</span>
+    </div>
+    <div class="header__contacts">
+            <h1 class="header__contacts__phone">+7 (963) 626-58-12</h1>
+            <span class="header__contacts__text mr20">отдел продаж</span>
+    </div>
+    <div class="header__mail">
+        <a href="mailto: sales.cgu@gmail.com" target="_blank">sales.cgu@gmail.com</a>
+    </div>
+</header>
+
+<main>
+
+    <section class="banner-menu">
+        <div class="banner-menu__img">
+            <div class="banner-menu__img__wrap">
+                <p class="banner-menu__img__text"></p>
+                <button class="banner-menu__img__btn">Заявка <img src="images/arrow_forward.svg" alt="arrow_forward"></button>
+            </div>
+        </div>
+        <ul class="banner-menu__nav">
+            <li class="banner-menu__nav__item">
+                <a href="#"><div class="image-wrap" data-text="Вы собираетесь в поездку?"><img src="images/trip.svg" alt="planning a trip?"></div><span class="nav__item__text">Вы собираетесь <br>в поездку?</span></a></li>
+            <li class="banner-menu__nav__item">
+                <a href="#"><div class="image-wrap" data-text="Нужны визы?"><img src="images/need_a_visa.svg" alt="need a visa?"></div><span class="nav__item__text">Нужны визы?</span></a></li>
+            <li class="banner-menu__nav__item">
+                <a href="#"><div class="image-wrap" data-text="Нужны билеты?"><img src="images/plane_icon.svg" alt="need a ticket?"></div><span class="nav__item__text">Нужны билеты?</span></a></li>
+            <li class="banner-menu__nav__item">
+                <a href="#"><div class="image-wrap" data-text="Нужен отель в Москве?"><img src="images/hotel_icon.svg" alt="need a hotel?"></div><span class="nav__item__text">Нужен отель
+                    <br>в Москве?</span></a></li>
+            <li class="banner-menu__nav__item">
+                <a href="#"><div class="image-wrap" data-text="Заказать экскурсию?"><img src="images/bus_icon.svg" alt="need an excursion?"></div><span class="nav__item__text">Заказать экскурсию?</span></a></li>
+            <li class="banner-menu__nav__item">
+                <a href="#"><div class="image-wrap" data-text="Встретить или проводить?"><img src="images/secretary_icon.svg" alt="need a way?"></div><span class="nav__item__text">Встретить или проводить?
+                    <br>Организовать трансфер?</span></a></li>
+        </ul>
+    </section>
+
+    <section class="colocation">
+        <h2 class="colocation__title block__title">Размещение рядом с аэропортами</h2>
+        <div class="colocation__btns-block">
+
+            <button class="colocation__btn colocation__btn--dodmodedovo active"
+                    data-center="55.416658, 37.834818"
+                    data-hotel="55.396720, 37.794464"
+                    data-reception="55.418756, 37.895505"
+            >
+                Домодедово
+            </button>
+            <button class="colocation__btn colocation__btn--vnukovo"
+                    data-center="55.611770, 37.277423"
+                    data-hotel="55.604079, 37.240759"
+                    data-reception="55.598546, 37.292296"
+            >
+                Внуково
+            </button>
+            <button class="colocation__btn colocation__btn--jukovsky"
+                    data-center="55.594126, 38.164653"
+                    data-hotel="55.566933, 38.243013"
+                    data-reception="55.562332, 38.118060"
+            >
+                Жуковский
+            </button>
+        </div>
+        <div class="colocation__map">
+            <div id="map" style="height: 400px"></div>
+            <button class="colocation__map-switcher colocation__map-switcher--hotel" >Отель</button>
+            <button class="colocation__map-switcher colocation__map-switcher--reception" >Стойка</button>
+        </div>
+
+
+    </section>
+
+    <section class="hotel-request">
+        <h1 class="hotel-request__heading">Не нашли нужный отель?</h1>
+        <span class="hotel-request__text">Отправьте запрос и мы с Вами свяжемся.</span>
+        <button class="hotel-request__btn main__btn">Запросить любой отель</button>
+    </section>
+
+    <section class="news">
+        <h2 class="news__title block__title">Новости</h2>
+        <div class="news_container swiper-container">
+            <ul class="news__list swiper-wrapper">
+                <li class="news__list-item swiper-slide">
+                    <div class="news__item">
+                    <img src="images/main-img_4.jpg" alt="" class="news__img">
+                    <time class="news__date" datetime="2017-03-21T14:09:00+03:00">21.03.2017</time>
+                    <p class="news__text">
+                        <span class="news__underline">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        </span>
+                    </p>
+                    </div>
+                </li>
+                <li class="news__list-item swiper-slide">
+                    <div class="news__item">
+                    <img src="images/main-img_5.jpg" alt="" class="news__img">
+                    <time class="news__date" datetime="2017-03-21T14:09:00+03:00">21.03.2017</time>
+                    <p class="news__text">
+                        <span class="news__underline">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit oluptatem. Nihil
+                        </span>
+                    </p>
+                    </div>
+                </li>
+                <li class="news__list-item swiper-slide">
+                    <div class="news__item">
+                    <img src="images/main-img_6.jpg" alt="" class="news__img">
+                    <time class="news__date" datetime="2017-03-21T14:09:00+03:00">21.03.2017</time>
+                    <p class="news__text">
+                        <span class="news__underline">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aut qui, ratione! Dolorem
+                        </span>
+                    </p>
+                    </div>
+                </li>
+                <li class="news__list-item swiper-slide">
+                    <div class="news__item">
+                    <img src="images/main-img_7.jpg" alt="" class="news__img">
+                    <time class="news__date" datetime="2017-03-21T14:09:00+03:00">21.03.2017</time>
+                    <p class="news__text">
+                        <span class="news__underline">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur consequatur deleniti laudantium
+                        </span>
+                    </p>
+                    </div>
+                </li>
+            </ul>
+<!--            <div class="swiper-button swiper-button-prev"></div>-->
+<!--            <div class="swiper-button swiper-button-next"></div>-->
+        </div>
+        <div class="swiper-button swiper-button-prev">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="#fff">
+                <path d="M10.4772727,0.477272727 C10.7408632,0.740863176 10.7408632,1.16822773 10.4772727,1.43181818 L1.90909091,10 L10.4772727,18.5681818 C10.7408632,18.8317723 10.7408632,19.2591368 10.4772727,19.5227273 C10.2136823,19.7863177 9.78631772,19.7863177 9.52272727,19.5227273 L0.707106781,10.7071068 C0.316582489,10.3165825 0.316582489,9.68341751 0.707106781,9.29289322 L9.52272727,0.477272727 C9.78631772,0.213682278 10.2136823,0.213682278 10.4772727,0.477272727 Z" transform="translate(4)"/>
+            </svg>
+        </div>
+        <div class="swiper-button swiper-button-next">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="#fff">
+                <path d="M1.37727273,19.5227273 C1.11368228,19.2591368 1.11368228,18.8317723 1.37727273,18.5681818 L9.94545455,10 L1.37727273,1.43181818 C1.11368228,1.16822773 1.11368228,0.740863176 1.37727273,0.477272727 C1.64086318,0.213682278 2.06822773,0.213682278 2.33181818,0.477272727 L11.1474387,9.29289322 C11.537963,9.68341751 11.537963,10.3165825 11.1474387,10.7071068 L2.33181818,19.5227273 C2.06822773,19.7863177 1.64086318,19.7863177 1.37727273,19.5227273 Z" transform="translate(4)"/>
+            </svg>
+        </div>
+        <button class="news__btn main__btn">Подписаться на новости</button>
+    </section>
+
+</main>
+
+<footer>
+    <div class="footer-info">
+        <div class="footer-addresses">
+            <span>Офис в Домодедово: ул.Школьная, 23</span>
+            <span>Офис в Видном: ул.Ленинского комсомола, 14</span>
+        </div>
+        <div class="footer-contacts__wrap">
+            <div class="footer-contacts">
+                <h1 class="footer-contacts__phone">+7 (963) 626-58-10</h1>
+                <span class="footer-contacts__text">договорной отдел</span>
+            </div>
+            <div class="footer-contacts">
+                <h1 class="footer-contacts__phone">+7 (963) 626-58-12</h1>
+                <span class="footer-contacts__text">отдел продаж</span>
+            </div>
+            <div class="footer-mail">
+                <a href="mailto: sales.cgu@gmail.com" target="_blank">sales.cgu@gmail.com</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-socials">
+        <div class="footer-socials__links">
+            <a href="#"><img src="images/pen_social.svg" alt="pen"></a>
+            <a href="#"><img src="images/facebook.svg" alt="facebook"></a>
+            <a href="#"><img src="images/ok_social.svg" alt="ok"></a>
+            <a href="#"><img src="images/vk_social.svg" alt="vk"></a>
+            <a href="#"><img src="images/twitter.svg" alt="twitter"></a>
+            <a href="#"><img src="images/star_social.svg" alt="star"></a>
+            <a href="#"><img src="images/yandex.svg" alt="yandex"></a>
+            <a href="#"><img src="images/google.svg" alt="google"></a>
+        </div>
+        <span class="footer-socials__text">Дизайн, разработка сайта - Interlabs.</span>
+    </div>
+</footer>
+
+<!--yandex maps-->
+<script src="https://api-maps.yandex.ru/2.1/?apikey=0ed56311-dca0-4c3f-a5f2-49411d840c7e&lang=ru_RU" type="text/javascript"></script>
+<script type="text/javascript">
+    ymaps.ready(function () {
+        let mapCenter = [ 55.416658, 37.834818 ];
+
+        let hotelCoordinates = [55.396720, 37.794464];
+        let receptionCoordinates = [55.418756, 37.895505];
+
+
+        let myPlacemarkHotel = new ymaps.Placemark(hotelCoordinates, {
+            balloonContent: '<div style="color: #009542; font-weight: bold; margin-bottom: 2em;">Гостинница рамада</div>' +
+                '<div style="margin-bottom: 2em;"><b>Адрес:</b> Улица Ильюшина <br/>(Авиационный) 1б Домодедово <br/>Московская областьб 142007 </div>'+
+                '<div style="margin-bottom: 2em;"><b>Телефон:</b> 8(459)723-10-23 </div>'
+
+        }, {
+            // Опции.
+            // Необходимо указать данный тип макета.
+            iconLayout: 'default#image',
+            // Своё изображение иконки метки.
+            iconImageHref: 'images/mapsmark.svg',
+            // Размеры метки.
+            iconImageSize: [30, 42],
+            // Смещение левого верхнего угла иконки относительно
+            // её "ножки" (точки привязки).
+            iconImageOffset: [-5, -38]
+        });
+        let myPlacemarkReception = new ymaps.Placemark(receptionCoordinates, {
+            balloonContent: '<div style="color: #009542; font-weight: bold; margin-bottom: 2em;">Гостинница рамада</div>' +
+                '<div style="margin-bottom: 2em;"><b>Адрес:</b> Улица Ильюшина <br/>(Авиационный) 1б Домодедово <br/>Московская областьб 142007 </div>'+
+                '<div style="margin-bottom: 2em;"><b>Телефон:</b> 8(459)723-10-23 </div>'
+        }, {
+            // Опции.
+            // Необходимо указать данный тип макета.
+            iconLayout: 'default#image',
+            // Своё изображение иконки метки.
+            iconImageHref: 'images/mapsmark.svg',
+            // Размеры метки.
+            iconImageSize: [30, 42],
+            // Смещение левого верхнего угла иконки относительно
+            // её "ножки" (точки привязки).
+            iconImageOffset: [-5, -38]
+        });
+
+        let myMap = new ymaps.Map('map', {
+            center: mapCenter,
+            zoom: 12,
+            controls: []
+        });
+        myMap.geoObjects
+            .add(myPlacemarkHotel)
+            .add(myPlacemarkReception);
+
+        document.querySelectorAll('.colocation__btn').forEach(item => {
+            item.addEventListener('click', event => {
+                let btnClicked = event.target;
+                let newCenter = btnClicked.dataset.center.split(",");
+                let newHotel = btnClicked.dataset.hotel.split(",");
+                let newReception = btnClicked.dataset.reception.split(",");
+                myMap.setCenter(newCenter, 12);
+                myPlacemarkHotel.geometry.setCoordinates(newHotel, 12)
+                myPlacemarkReception.geometry.setCoordinates(newReception, 12)
+            })
+        });
+
+        document.querySelector('.colocation__map-switcher--hotel').addEventListener('click', event => {
+            let newCenter = myPlacemarkHotel.geometry.getCoordinates()
+            myMap.setCenter(newCenter, 12);
+        });
+
+        document.querySelector('.colocation__map-switcher--reception').addEventListener('click', event => {
+            let newCenter = myPlacemarkReception.geometry.getCoordinates()
+            myMap.setCenter(newCenter, 12);
+        });
+
+    });
+</script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</body>
+</html>

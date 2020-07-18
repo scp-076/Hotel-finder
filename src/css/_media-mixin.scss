@@ -1,0 +1,44 @@
+$breakpoints: (
+        'sm': 576px,
+        'md': 768px,
+        'lg': 992px,
+        'xl': 1200px
+);
+
+@mixin media( $point ) {
+  @if map-has-key($breakpoints, $point) {
+    @media screen and ( min-width: map-get($breakpoints, $point) ) {
+      @content;
+    }
+  }
+  @else {
+    @media screen and ( min-width: $point + 'px') {
+      @content;
+    }
+  }
+}
+
+$max-breakpoints: (
+'wide-desctop': 1790px,
+'desctop': 1700px, //desctop
+'widest-tablet': 1365px,
+"wide-tablet": 1050px,
+'tablet': 865px, //tablet
+'wide-mobile': 768px,
+'mobile': 500px,
+'xs': 360px
+);
+
+
+@mixin max-media( $point ) {
+  @if map-has-key($max-breakpoints, $point) {
+    @media screen and ( max-width: map-get($max-breakpoints, $point) ) {
+      @content;
+    }
+  }
+  @else {
+    @media screen and ( max-width: $point + 'px') {
+      @content;
+    }
+  }
+}
