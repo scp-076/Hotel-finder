@@ -1,12 +1,12 @@
 
 @font-face {
   font-family: "Raleway Medium";
-  src: url("../other/Fonts/Raleway-Medium.woff");
+  src: url("../Fonts/Raleway-Medium.woff");
 }
 
 @font-face {
   font-family: "Tahoma";
-  src: url("../other/Fonts/Tahoma.woff");
+  src: url("../Fonts/Tahoma.woff");
 }
 
 body {
@@ -377,7 +377,7 @@ header {
   & .header__contacts {
     display: flex;
     flex-flow: column nowrap;
-    align-items: center;
+    align-items: flex-end;
     margin-left: 150px;
 
     @include max-media(1400) {
@@ -387,6 +387,7 @@ header {
     @include max-media(768) {
       margin-left: 50px;
       flex-flow: row nowrap;
+      align-items: center;
       order: 1;
     }
 
