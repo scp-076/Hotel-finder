@@ -1,3 +1,5 @@
+document.addEventListener("DOMContentLoaded", function(event) {
+
 const search = document.querySelector('.header__search');
 const searchExpanded = document.querySelector('.header__search__expanded');
 const burger = document.querySelector('.burger-menu-wrap');
@@ -25,7 +27,7 @@ searchExpanded.addEventListener('click', (e) => {
 
 burger.addEventListener('click', () => {
     document.querySelector('.burger-menu').classList.toggle('burger-active');
-    document.querySelector('aside').classList.toggle('burger-active');
+    navigation.classList.toggle('burger-active');
 });
 
 if(document.documentElement.scrollWidth <= 500){
@@ -42,8 +44,6 @@ if(document.documentElement.scrollWidth <= 500){
 }
 
 //=============== готовность дома
-
-document.addEventListener("DOMContentLoaded", function(event) {
 
     //=============== map tabs
 
