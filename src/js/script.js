@@ -30,13 +30,16 @@ burger.addEventListener('click', () => {
     navigation.classList.toggle('burger-active');
 });
 
+
 if(document.documentElement.scrollWidth <= 500){
+    bannerMenuItems[0].classList.add('active-link');
+    document.querySelector('.banner-menu__img__wrap').style.display = "flex";
+    document.querySelector('.banner-menu__img__text').textContent = bannerMenuItems[0].dataset.text;
     bannerMenuItems.forEach((item) => {
         item.addEventListener('click', (e) => {
             if(document.querySelector('.active-link')){
                 document.querySelector('.active-link').classList.remove('active-link');
             }
-            document.querySelector('.banner-menu__img__wrap').style.display = "flex";
             document.querySelector('.banner-menu__img__text').textContent = e.currentTarget.dataset.text;
             e.currentTarget.classList.toggle('active-link');
         });
