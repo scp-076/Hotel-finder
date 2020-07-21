@@ -90,7 +90,7 @@ export function styles() {
         gcmq(),
         // cleanCSS(),
         // sourcemaps.write(), //sourcemaps for development mode
-        // autoprefixer(['last 15 versions']),
+        autoprefixer(['last 15 versions']),
         // rename({ suffix: '.min'}),// pass in options to the stream
         sourcemaps.write(), //sourcemaps for development mode
         gulp.dest(paths.styles.dest)
